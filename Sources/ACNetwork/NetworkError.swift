@@ -1,5 +1,5 @@
 //
-//  ACNetwork.swift
+//  NetworkError.swift
 //  
 //
 //  Created by Julio César Fernández Muñoz on 26/7/23.
