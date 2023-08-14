@@ -10,7 +10,9 @@ import SwiftUI
 public final class ACNetwork {
     public static let shared = ACNetwork()
     
-    public func getJSON<JSON:Codable>(request:URLRequest, type:JSON.Type, decoder:JSONDecoder = JSONDecoder()) async throws -> JSON {
+    public func getJSON<JSON:Codable>(request:URLRequest, 
+                                      type:JSON.Type,
+                                      decoder:JSONDecoder = JSONDecoder()) async throws -> JSON {
         let (data, response) = try await URLSession.shared.dataRequest(for: request)
         guard let response = response as? HTTPURLResponse else { throw NetworkError.noHTTP }
         if response.statusCode == 200 {
