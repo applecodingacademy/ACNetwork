@@ -1,10 +1,4 @@
 @Tutorials(name: "ACNetwork") {
-    @Metadata {
-        @PageImage(purpose: icon,
-                   source: "servers",
-                   alt: "Trabajo con red")
-    }
-    
     @Intro(title: "Tutoriales de ACNetwork") {
         Tutoriales que servirán para aprender a manejar la librería `ACNetwork` de implementación de red.
         
