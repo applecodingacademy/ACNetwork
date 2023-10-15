@@ -15,6 +15,12 @@ Librería de red para conseguir cualquier tipo de llamada usando la implementaci
     - <doc:Request>
 }
 
+### Tutoriales
+
+@Links(visualStyle: list) {
+    - <doc:GetRequest>
+}
+
 ## Overview
 
 Librería de uso de red que está basada principalmente en el uso la clase de tipo `singleton` llamada ``ACNetwork``.

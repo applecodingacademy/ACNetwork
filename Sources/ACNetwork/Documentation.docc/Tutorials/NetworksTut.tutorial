@@ -1,0 +1,21 @@
+@Tutorials(name: "ACNetwork") {
+    @Metadata {
+        @PageImage(purpose: icon,
+                   source: "servers",
+                   alt: "Trabajo con red")
+    }
+    
+    @Intro(title: "Tutoriales de ACNetwork") {
+        Tutoriales que servirán para aprender a manejar la librería `ACNetwork` de implementación de red.
+        
+        @Image(source: networkTutorial, alt: "Usuarios utilizando la librería ACNetwork")
+    }
+    
+    @Chapter(name: "ACNetwork GET Request") {
+        Tutorial para realizar una petición de tipo `GET` a través de la librería `ACNetwork`.
+        
+        @Image(source: tutorial.png, alt: "Persona probando a utilizar la librería.")
+        
+        @TutorialReference(tutorial: "doc:GetRequest")
+    }
+}

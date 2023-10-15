@@ -1,0 +1,65 @@
+@Tutorial(time: 10) {
+    @Intro(title: "Ejemplo GET Request") {
+        Este tutorial nos enseñará a cómo construir una llamada de tipo `GET` utilizando la librería `ACNetwork` de uso de red.
+        
+        @Image(source: networkSide, alt: "Servidores de red")
+    }
+    
+    @Section(title: "Creación de un GET") {
+        @ContentAndMedia {
+            Con este tema podremos aprender a cómo realizar una petición `GET` que nos recupere una estructura de datos de `Empleados` que también definiremos.
+            
+            @Image(source: tutorial, alt: "Un chiquillo usando el ordenador")
+        }
+        
+        @Steps {
+            @Step {
+                Creamos un nuevo fichero para añadir el código que nos servirá de ejemplo.
+                
+                @Image(source: placeholder-image, alt: "Imagen de relleno")
+            }
+            
+            @Step {
+                Incluye las librerías `ACNetwork` y `Foundation`, y luego genera una instancia global del *singleton* de la clase `ACNetwork`
+                
+                @Code(name: "GetRequest.swift", file: Step01.swift)
+            }
+            
+            @Step {
+                Indicamos la `URL` de la API a la que vamos a llamar.
+                
+                @Code(name: "GetRequest.swift", file: Step02.swift)
+            }
+            
+            @Step {
+                Creamos la `URLRequest` a partir del uso del método estático `.get` que incorporan las extensiones de la librería.
+                
+                @Code(name: "GetRequest.swift", file: Step03.swift)
+            }
+            
+            @Step {
+                Creamos la estructura de `Empleados` que nos servirá para recuperar la información
+                
+                @Code(name: "GetRequest.swift", file: Step04.swift) {
+                    @Image(source: capturaCarga, alt: "Carga de empleados en ejecución")
+                }
+            }
+
+            @Step {
+                Hacemos la llamada de red para recuperar los datos.
+                
+                @Code(name: "GetRequest.swift", file: Step05.swift) {
+                    @Image(source: capturaEmpleados, alt: "Carga de empleados en ejecución")
+                }
+            }
+            
+            @Step {
+                No olvidemos poner el control de errores para evitar cualquier problema.
+                
+                @Code(name: "GetRequest.swift", file: Step06.swift) {
+                    @Image(source: capturaEmpleados, alt: "Carga de empleados en ejecución")
+                }
+            }
+        }
+    }
+}
